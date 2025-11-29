@@ -10,9 +10,9 @@ from pathlib import Path
 
 from goldbach_check import sieve
 
-OUT_PATH = Path(__file__).resolve().parent / 'runs' / 'thru1-000-000.txt'
-MAX_N = 1_000_000
-
+MAX_N = 1_000_000_000
+# Build the filename first, then join with Path to avoid TypeError
+OUT_PATH = Path(__file__).resolve().parent / 'runs' / (f"thru{MAX_N:,}".replace(',', '-') + '.txt')
 
 def main():
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
