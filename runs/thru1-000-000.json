@@ -1,0 +1,31 @@
+{
+  "artifact": {
+    "bytes": 10187597,
+    "path": "thru1-000-000.txt",
+    "sha256": "50e7b4f32595d5eb460f20de4cbdee578c5bf924ef8ad2da084f7c89dcee3c52"
+  },
+  "command": [
+    "python3",
+    "generate_thru_n.py",
+    "--max-n",
+    "1000000"
+  ],
+  "range": {
+    "end": 1000000,
+    "records": 499999,
+    "start": 4
+  },
+  "schema": 1,
+  "sources": {
+    "checker": {
+      "bytes": 2122,
+      "path": "../goldbach_check.py",
+      "sha256": "60fb0fed1d9da42a60087f5eae0459378655a5a06722c4dbc75da23374ba709f"
+    },
+    "generator": {
+      "bytes": 3180,
+      "path": "../generate_thru_n.py",
+      "sha256": "bf8ed3ec474dccc07160aa82f68e802d32d0dcbf6786642e96e22b8c689dc2d9"
+    }
+  }
+}
